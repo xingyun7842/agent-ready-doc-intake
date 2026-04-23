@@ -1,42 +1,57 @@
-# Agent Ready Docs Starter
+# Agent Ready Doc Intake
 
-A static starter for selling or demoing an **agent-ready document cleanup** service.
+Turn messy documents into agent-ready intake flows.
 
-It is designed for the common situation where a team has:
-- PDFs
-- scanned files
-- proposal archives
-- legal attachments
-- research folders
+This repository is a static-first starter for teams that already have PDFs, scans, proposal folders, and attachments, but do **not** want to begin with a heavyweight parser, queue, storage layer, or RAG stack.
 
-and wants to turn them into structured markdown, manifests, and a cleaner handoff for AI workflows.
+It gives you the first layer that usually gets skipped:
+- a clear intake page
+- a believable output preview
+- an agent handoff structure
+- a clean starting point that can later grow into Docling, MarkItDown, OCR, MCP, or private knowledge workflows
 
 ## Why This Exists
 
-Most AI document demos jump straight to heavyweight parsing stacks, uploads, queues, or vector infrastructure.
+Many teams are not blocked by model quality. They are blocked by the lack of a clear, forkable, trustworthy starting point for document intake.
 
-This project starts earlier in the funnel:
-- explain the offer clearly
-- show what the delivery looks like
-- collect interest before building a heavy backend
+This project is intentionally:
+- static first
+- backend later
+- easy to fork
+- easy to deploy
 
-It is intentionally small, static, and deployable in minutes.
+It does not pretend to be a full parser or a complete AI platform. It makes the first public-facing layer usable today.
 
 ## What Is Included
 
 - `index.html`
-  - public landing page for a document cleanup offer
+  - intake landing page for an agent-ready document workflow
 - `samples/output-preview.html`
-  - sample handoff page showing manifest and markdown output
+  - sample delivery showing manifest and markdown handoff structure
 - `assets/styles.css`
   - standalone styling with no build step
 
+## Before / After
+
+Before:
+- raw PDFs
+- scans
+- proposal attachments
+- folder chaos
+
+After:
+- manifest preview
+- normalized markdown delivery
+- clearer handoff to agents and private AI tools
+- a front-end wedge you can extend later
+
 ## Good First Use Cases
 
-- `docs.xingyun10x.top`
+- `docs.example.com`
 - `kb.example.com`
-- internal concept validation for a service business
-- a launch page before adding upload or parsing workflows
+- a public intake demo before backend work exists
+- a service landing page that can later evolve into a product
+- a starter shell for private document workflow experiments
 
 ## What This Is Not
 
@@ -45,7 +60,7 @@ It is intentionally small, static, and deployable in minutes.
 - not an MCP server
 - not a file processing pipeline
 
-This is the **front-end wedge**: the part that proves demand and communicates value before the heavier system exists.
+This is the **front-end wedge**: the part that proves demand and communicates the workflow before the heavier system exists.
 
 ## Deploy
 
@@ -54,7 +69,7 @@ This is the **front-end wedge**: the part that proves demand and communicates va
 1. Create a clean public repository from this folder only.
 2. Import that repository into Vercel.
 3. Deploy as a static site.
-4. Bind a production subdomain such as `docs.xingyun10x.top`.
+4. Bind a production subdomain such as `docs.example.com`.
 
 ### Local Preview
 
@@ -63,19 +78,19 @@ Open `index.html` directly in a browser, or serve the folder with any static fil
 ## Why It Can Earn Attention
 
 The repo is narrow and legible:
-- one clear use case
-- one believable offer
-- one sample output
+- one clear document workflow
+- one believable preview
+- one easy deployment path
 - no setup pain
 
 That makes it more shareable than a half-finished full-stack app.
 
 ## Suggested Next Steps
 
-- add a lead form
-- add 2-3 vertical variants
-- add sample manifests for legal, consulting, and research teams
-- later connect a real document-processing backend
+- add a real intake form
+- add vertical variants for legal, consulting, and research teams
+- connect Docling or MarkItDown for actual document conversion
+- add storage, queueing, and MCP integration later
 
 ## License
 
