@@ -4,6 +4,8 @@ Turn messy documents into agent-ready intake flows.
 
 This repository is a static-first starter for teams that already have PDFs, scans, proposal folders, and attachments, but do **not** want to begin with a heavyweight parser, queue, storage layer, or RAG stack.
 
+![Agent Ready Doc Intake preview](./assets/images/cover.png)
+
 It gives you the first layer that usually gets skipped:
 - a clear intake page
 - a believable output preview
