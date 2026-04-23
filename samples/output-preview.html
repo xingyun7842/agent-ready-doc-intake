@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Delivery Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Sample Delivery</p>
+        <h1>What a cleaned document pack looks like.</h1>
+        <p class="lede">
+          This preview is the kind of output a team receives after the starter pack: a manifest, normalized markdown files,
+          metadata, and an AI handoff note.
+        </p>
+      </div>
+      <div class="hero-card">
+        <div class="price-chip">Example Deliverable</div>
+        <h2>Three things matter</h2>
+        <ul>
+          <li>Stable filenames</li>
+          <li>Traceable metadata</li>
+          <li>Clear AI handoff instructions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="visual-band">
+      <div class="band-card">
+        <p class="eyebrow">manifest.json</p>
+        <pre><code>{
+  "workspace": "proposal-library-q2",
+  "processed_at": "2026-04-24T08:30:00Z",
+  "documents": [
+    {
+      "id": "doc_001",
+      "source_name": "Proposal Alpha Final.pdf",
+      "output_markdown": "ready/proposal-alpha.md",
+      "metadata_file": "metadata/proposal-alpha.json",
+      "sections": 14,
+      "contains_tables": true,
+      "notes": ["normalized headings", "table blocks preserved"]
+    },
+    {
+      "id": "doc_002",
+      "source_name": "Legal Appendix Scan.pdf",
+      "output_markdown": "ready/legal-appendix.md",
+      "metadata_file": "metadata/legal-appendix.json",
+      "sections": 8,
+      "contains_tables": false,
+      "notes": ["ocr-cleaned", "footnotes merged"]
+    }
+  ]
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="deliverables">
+      <article>
+        <span class="kicker">ready/proposal-alpha.md</span>
+        <p>Front matter, section hierarchy, table markers, and cleaner text blocks than a raw PDF upload.</p>
+        <pre><code>---
+title: Proposal Alpha
+source: Proposal Alpha Final.pdf
+doc_id: doc_001
+---
+
+# Executive Summary
+...
+
+## Pricing Structure
+| Item | Qty | Cost |
+| --- | ---: | ---: |
+| Analysis | 2 | $4,000 |</code></pre>
+      </article>
+      <article>
+        <span class="kicker">README-agent-handoff.md</span>
+        <p>The handoff tells an AI client or operator how to consume the bundle without guessing.</p>
+        <pre><code># Agent Handoff
+
+Use `manifest.json` as the entry point.
+Prefer markdown under `ready/`.
+Use metadata files for provenance and file type notes.
+When citing, reference `doc_id` and section heading.
+Avoid using source PDFs directly unless verification is needed.</code></pre>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
