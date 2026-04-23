@@ -157,6 +157,12 @@ body {
   color: var(--muted);
 }
 
+.micro-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 section {
   margin-top: 20px;
 }
@@ -164,7 +170,9 @@ section {
 .signal-grid,
 .deliverables,
 .audience-grid,
-.offer-grid {
+.offer-grid,
+.process-strip,
+.trust-grid {
   display: grid;
   gap: 16px;
 }
@@ -216,6 +224,11 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+.process-strip,
+.trust-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 .kicker {
   display: inline-block;
   font-size: 12px;
@@ -263,6 +276,34 @@ pre {
   background: linear-gradient(160deg, rgba(184, 85, 46, 0.08), rgba(255, 250, 242, 0.92));
 }
 
+.process-strip article,
+.trust-grid article {
+  border-radius: 22px;
+  padding: 22px;
+  background: rgba(255, 250, 242, 0.92);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.process-strip h3,
+.trust-grid h2 {
+  margin: 0 0 10px;
+}
+
+.process-strip p,
+.trust-grid p,
+.trust-grid li {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.trust-grid ul {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.8;
+}
+
 .final-cta {
   border-radius: 28px;
   padding: 28px;
@@ -274,6 +315,12 @@ pre {
 
 .final-cta span {
   color: var(--accent);
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 @media (max-width: 900px) {
