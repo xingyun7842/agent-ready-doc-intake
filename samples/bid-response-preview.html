@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bid Response Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Bid-Response Variant</p>
+        <h1>What the pack looks like for RFP and legal-heavy work.</h1>
+        <p class="lede">
+          This variant shows a denser packet: response drafts, appendices, requirements matrix notes, and a citation map
+          that makes future reuse safer.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="../index.html">Back to offer</a>
+          <a class="button secondary" href="./output-preview.html">Open consulting variant</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="price-chip">Traceability-Focused Sample</div>
+        <h2>Three things matter here</h2>
+        <ul>
+          <li>Section-to-source mapping</li>
+          <li>Reusable answer blocks</li>
+          <li>Fewer citation mistakes under deadline</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="signal-grid">
+      <article>
+        <h2>Source packet</h2>
+        <p>RFP PDF, answer draft, pricing appendix, scanned legal addendum, and past response fragments spread across folders.</p>
+      </article>
+      <article>
+        <h2>Buyer outcome</h2>
+        <p>Future bid work starts from structured answer blocks and citation notes instead of searching old attachments from scratch.</p>
+      </article>
+      <article>
+        <h2>Why it sells</h2>
+        <p>The pain is immediate, the sample is easy to inspect, and the value is closer to deadline reduction than generic file cleanup.</p>
+      </article>
+    </section>
+
+    <section class="visual-band">
+      <div class="band-card">
+        <p class="eyebrow">manifest.json</p>
+        <pre><code>{
+  "workspace": "bid-response-q3",
+  "processed_at": "2026-04-24T09:05:00Z",
+  "documents": [
+    {
+      "id": "bid_001",
+      "source_name": "RFP Master.pdf",
+      "output_markdown": "ready/rfp-master.md",
+      "metadata_file": "metadata/rfp-master.json",
+      "sections": 23,
+      "contains_tables": true,
+      "notes": ["requirements numbered", "deadlines extracted"]
+    },
+    {
+      "id": "bid_002",
+      "source_name": "Legal Addendum Scan.pdf",
+      "output_markdown": "ready/legal-addendum.md",
+      "metadata_file": "metadata/legal-addendum.json",
+      "sections": 11,
+      "contains_tables": false,
+      "notes": ["ocr-cleaned", "clause headings normalized"]
+    }
+  ],
+  "derived_assets": [
+    "citation-map.md",
+    "answer-blocks.md"
+  ]
+}</code></pre>
+      </div>
+    </section>
+
+    <section class="deliverables">
+      <article>
+        <span class="kicker">citation-map.md</span>
+        <p>A compact map that links common answer sections back to source docs, clause headings, and requirement numbers.</p>
+        <pre><code>| Requirement | Reusable Answer Block | Primary Source |
+| --- | --- | --- |
+| 4.2 Security Controls | answer_blocks/security-controls.md | legal-addendum.md#section-4 |
+| 6.1 Delivery Timeline | answer_blocks/timeline.md | rfp-master.md#timeline |</code></pre>
+      </article>
+      <article>
+        <span class="kicker">answer-blocks.md</span>
+        <p>The pack separates reusable narrative blocks from source-heavy appendices, which makes future responses faster and safer.</p>
+        <pre><code># Reusable Answer Blocks
+
+## Security Controls
+Our delivery workflow keeps customer data in scoped systems...
+
+## Timeline Commitment
+Standard implementation begins within 10 business days...</code></pre>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
